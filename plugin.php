@@ -97,7 +97,7 @@ class ETPlugin_MenuLinks extends ETPlugin {
 			if (!$form->errorCount()) // if no errors save config.
 			{
 				ET::writeConfig($config);
-				$sender->message(T("message.changesSaved"), "success");
+				$sender->message(T("message.changesSaved"), "success autoDismiss");
 				$sender->redirect(URL("admin/plugins"));
 			}
 		}
