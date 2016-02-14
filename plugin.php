@@ -103,7 +103,7 @@ class ETPlugin_MenuLinks extends ETPlugin {
 		}
 		
 		$sender->data("MenuLinks", $form);
-		return $this->getView("settings");
+		return $this->view("settings");
 	}
 
 }
